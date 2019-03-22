@@ -9,20 +9,27 @@
 </template>
 
 <style lang="less">
+// 重置样式表
+@import './common/css/reset.css';
+@import './common/less/var';
+
+html, body {
+    background-color: @gray-bg;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: @black;
 }
 #nav {
   padding: 30px;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #1e1b22;
     &.router-link-exact-active {
-      color: #42b983;
+      color: @roseRed;
     }
   }
 }
