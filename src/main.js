@@ -5,6 +5,7 @@ import router from './router';
 import store from './store';
 import 'echarts/lib/chart/bar';
 import 'echarts/lib/component/tooltip';
+import 'echarts/theme/macarons.js';
 
 Vue.component('v-chart', ECharts);
 Vue.config.productionTip = false;
