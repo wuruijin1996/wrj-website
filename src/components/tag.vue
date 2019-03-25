@@ -1,7 +1,10 @@
 <template>
   <div class="tag-wrap">
     <ul>
-      <li v-for="(item, index) in colorList" :key="index" :style="{backgroundColor: item.value}">{{item.name}}</li>
+      <li v-for="(item, index) in colorList" :key="index" :style="{backgroundColor: item.value}">
+        <div class="point"></div>
+        <span>{{item.name}}</span>
+      </li>
     </ul>
   </div>
 </template>
@@ -69,11 +72,26 @@ export default {
     flex-wrap: wrap;
     li {
       color: #fff;
-      border: 1px solid @gray-bg;
-      border-radius: 4px;
+      border-radius: @radius-px;
       padding: 4px 10px;
       margin: 5px;
       overflow: hidden;
+      position: relative;
+      &:hover {
+        .point {
+          left: 100%;
+          transform: rotate(180deg);
+        }
+      }
+      .point {
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-color: #fff;
+        transition: all 1s ease-in-out;
+      }
     }
   }
 }
