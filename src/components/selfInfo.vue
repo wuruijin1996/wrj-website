@@ -68,9 +68,7 @@ export default {
             type: 'bar',
             itemStyle: {
               normal: {
-                // 好，这里就是重头戏了，定义一个list，然后根据所以取得不同的值，这样就实现了，
                 color(params) {
-                  // build a color map as your need.
                   const colorList = [
                     '#76ddd6', '#f0a7c4', '#ffe04c', '#c6d8d3',
                   ];

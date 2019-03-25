@@ -28,27 +28,28 @@ export default {
 .index {
   display: flex;
   max-width: 1220px;
-  padding: 0 10px;
+  padding: 20px 10px 50px;
   margin: 0 auto;
   .index-left {
     width: 400px;
     border-radius: @radius-px;
     overflow: hidden;
+    padding: 10px;
   }
   .index-right {
     flex: 1;
-    padding: 0 10px;
   }
 }
 @media screen and (max-width: 640px)  {
   .index {
+    padding: 0;
     flex-wrap: wrap;
     .index-left {
       width: 100%;
+      padding: 0;
     }
     .index-right {
       width: 100%;
-      padding: 0;
     }
   }
 }

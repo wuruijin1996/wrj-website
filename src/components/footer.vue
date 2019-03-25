@@ -1,22 +1,16 @@
 <template>
-  <div class="tag-wrap">
-
+  <div class="footer">
+    <p class="beian">闽ICP备19003974号</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TagBox',
-  props: {
-    msg: String,
-  },
+  name: 'Footer',
   data() {
     return {
 
     };
-  },
-  methods: {
-
   },
 };
 </script>
@@ -24,5 +18,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 @import "../common/less/var";
-
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: @gray;
+  p {
+    font-size: 12px;
+    color: @gray-bg;
+  }
+}
 </style>

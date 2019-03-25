@@ -1,12 +1,26 @@
 <template>
   <div id="app">
+    <Header></Header>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div> -->
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
+
+<script>
+import Header from '@/components/header.vue';
+import Footer from '@/components/footer.vue';
+
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+};
+</script>
 
 <style lang="less">
 // 重置样式表
@@ -18,13 +32,11 @@ html, body {
     color: @black;
 }
 
-html {
-  a {
-      color: @black;
-    }
-  p {
-    color: @gray-dark;
+a {
+    color: @black;
   }
+p {
+  color: @gray-dark;
 }
 
 #app {
