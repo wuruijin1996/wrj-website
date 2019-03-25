@@ -15,12 +15,14 @@
 
 html, body {
     background-color: @gray-bg;
+    color: @black;
 }
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
   color: @black;
 }
 #nav {
