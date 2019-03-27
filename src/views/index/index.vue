@@ -28,7 +28,7 @@ export default {
 .index {
   display: flex;
   max-width: 1220px;
-  padding: 20px 10px 50px;
+  padding: 10px 10px 50px;
   margin: 0 auto;
   .index-left {
     width: 400px;

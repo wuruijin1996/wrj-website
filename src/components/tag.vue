@@ -79,8 +79,7 @@ export default {
       position: relative;
       &:hover {
         .point {
-          left: 100%;
-          transform: rotate(180deg);
+          transform: rotate(360deg);
         }
       }
       .point {
