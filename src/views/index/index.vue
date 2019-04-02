@@ -12,7 +12,7 @@
 <script>
 // @ is an alias to /src
 import SelfInfo from '@/components/selfInfo.vue';
-import WorksList from '@/components/worksList.vue';
+import WorksList from '@/views/works/works.vue';
 
 export default {
   name: 'home',

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-bg">
-      <h1>Hello, welcome</h1>
+      <h1><i class="iconfont icon-smile"></i>{{hello}}</h1>
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
   name: 'Header',
   data() {
     return {
-
+      hello: 'Hello, welcome',
     };
   },
   methods: {
@@ -30,13 +30,12 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: #5b6598;
-    background-image: url(../common/images/bg4.jpg);
-    background-position: 0 50%;
-    background-size: 200%;
+    background-image: url(../common/images/bg3.jpg);
+    background-position: 0 20%;
+    background-size: cover;
     background-blend-mode: soft-light;
-    animation: scaleBg 20s;
   }
   h1 {
     font-size: 3rem;
@@ -49,18 +48,21 @@ export default {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    i {
+      font-size: inherit;
+      margin-right: 10px;
+    }
   }
 }
 
-@-webkit-keyframes scaleBg {
-	0% {
-		background-size: 200%;
-	}
-	50% {
-		background-size: 100%;
-  }
-  100% {
-    background-size: 100%;
+@media screen and (max-width: 640px)  {
+  .header {
+    .header-bg {
+      height: 120px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
   }
 }
 

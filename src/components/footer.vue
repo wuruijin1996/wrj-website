@@ -21,10 +21,9 @@ export default {
 .footer {
   padding: 20px;
   text-align: center;
-  background-color: @gray;
   p {
     font-size: 12px;
-    color: @gray-bg;
+    color: @gray;
   }
 }
 </style>
