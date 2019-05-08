@@ -24,7 +24,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "../../common/less/var";
 .index {
   display: flex;
   max-width: 1220px;

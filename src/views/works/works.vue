@@ -74,7 +74,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-@import "../../common/less/var";
 .works-wrap {
   .works-list {
     display: flex;

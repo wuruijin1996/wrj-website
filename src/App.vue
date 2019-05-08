@@ -25,7 +25,6 @@ export default {
 <style lang="less">
 // 重置样式表
 @import './common/css/reset.css';
-@import './common/less/var';
 
 html, body {
     background-color: @gray-bg;
