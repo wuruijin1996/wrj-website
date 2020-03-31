@@ -39,10 +39,10 @@ export default {
           url: 'http://www.wuruijin.cn/wuui/',
         },
         {
-          name: 'Select美化插件',
-          desc: '就是一个美化 select 原生组件的小插件',
-          imgUrl: 'http://www.wuruijin.cn/works-img/select.jpg',
-          url: 'https://www.jq22.com/jquery-info17583',
+          name: '分分钟线上便利店 （移动端）',
+          desc: '可以在线下单的便利店',
+          imgUrl: 'http://www.wuruijin.cn/works-img/every-minute.jpg',
+          url: 'http://www.wuruijin.cn/works/everyMinute/',
         },
         {
           name: '蜕潮官网',
@@ -51,16 +51,16 @@ export default {
           url: 'http://www.wuruijin.cn/works/turn/',
         },
         {
+          name: 'Select美化插件',
+          desc: '就是一个美化 select 原生组件的小插件',
+          imgUrl: 'http://www.wuruijin.cn/works-img/select.jpg',
+          url: 'https://www.jq22.com/jquery-info17583',
+        },
+        {
           name: '手机诊断室 （移动端）',
           desc: '一个可以测试你手机值多钱的小工具(准不准我不知道~)',
           imgUrl: 'http://www.wuruijin.cn/works-img/phone.png',
           url: 'http://www.wuruijin.cn/works/phone-test/',
-        },
-        {
-          name: '滚动抽奖',
-          desc: '一个三联动滚动抽奖工具',
-          imgUrl: 'http://www.wuruijin.cn/works-img/lucky-draw.png',
-          url: 'http://www.wuruijin.cn/works/luckyDraw/',
         },
         {
           name: '幸运大转盘 （移动端）',
