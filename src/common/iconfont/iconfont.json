@@ -1,0 +1,65 @@
+{
+  "id": "1114026",
+  "name": "my-site",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3876414",
+      "name": "jquery",
+      "font_class": "jquery",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "3876518",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "3745058",
+      "name": "笑脸",
+      "font_class": "smile",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "258634",
+      "name": "邮箱",
+      "font_class": "email",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "765849",
+      "name": "地址",
+      "font_class": "address",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "1126006",
+      "name": "电话",
+      "font_class": "phone",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "4488849",
+      "name": "性别",
+      "font_class": "sex",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "7140571",
+      "name": "性别男",
+      "font_class": "man",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    }
+  ]
+}

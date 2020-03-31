@@ -26,7 +26,11 @@ export default {
           value: '#f0a7c4',
         },
         {
-          name: 'Vue',
+          name: 'JS / ES6',
+          value: '#f0a7c4',
+        },
+        {
+          name: 'Vue / vue-cli',
           value: '#76ddd6',
         },
         {
@@ -39,18 +43,18 @@ export default {
         },
         {
           name: 'Bootstrap',
-          value: '#ffe04c',
+          value: '#f5d849',
         },
         {
           name: 'UI设计',
-          value: '#ffe04c',
+          value: '#f5d849',
         },
         {
           name: 'Git',
-          value: '#ffe04c',
+          value: '#f5d849',
         },
         {
-          name: 'Dcloud',
+          name: 'Hbuilder',
           value: '#c6d8d3',
         },
         {

@@ -9,20 +9,31 @@
           >
         </div>
         <div class="name">
-          <h4>Hello</h4>
-          <p>
-            <i class="iconfont icon-sex"></i>
-            <span><i class="iconfont icon-man" title="男!"></i></span>
-          </p>
-          <p>
-            <i class="iconfont icon-email"></i>
-            <span>wuruijin1996@163.com</span></p>
-          <p>
-            <i class="iconfont icon-phone"></i>
-            <a href="tel:18559997346">18559997346</a>
-          </p>
+          <h4>吴瑞进 (三年经验)</h4>
+          <ul class="info-ul">
+            <li>
+              <i class="iconfont icon-sex"></i>
+              <span>男 24岁</span>
+            </li>
+            <li>
+              <i class="iconfont icon-email"></i>
+              <span>wuruijin1996@163.com</span></li>
+            <li>
+              <i class="iconfont icon-phone"></i>
+              <a href="tel:18559997346">18559997346</a>
+            </li>
+            <li>
+              <i class="iconfont icon-github"></i>
+              <a href="https://github.com/wuruijin1996" target="_blank">Github 个人主页</a>
+            </li>
+            <li>
+              <i class="iconfont icon-jquery"></i>
+              <a href="https://www.jq22.com/mem350037" target="_blank">JQ22 个人主页</a>
+            </li>
+          </ul>
           <div class="btn-resume">
             <a href="http://www.wuruijin.cn/works/resume/" target="_blank">查看详细简历</a>
+            <a href="http://www.wuruijin.cn/works/pdf" target="_blank">PDF简历</a>
           </div>
         </div>
       </div>
@@ -78,7 +89,7 @@ export default {
         yAxis: [
           {
             type: 'category',
-            data: ['HTML', 'CSS', 'ES6', 'JS', 'PHP'],
+            data: ['PHP', 'VUE', 'ES6', 'JS', 'CSS', 'HTML'],
           },
         ],
         series: [
@@ -95,8 +106,8 @@ export default {
                 },
               },
             },
-            barWidth: 20,
-            data: [85, 85, 60, 80, 30],
+            barWidth: 12,
+            data: [20, 65, 65, 82, 90, 90],
           },
         ],
       },
@@ -122,24 +133,32 @@ export default {
 .self-info-wrap {
   background-color: #fff;
   padding: 40px 20px;
+  border-radius: 4px;
+  overflow: hidden;
   .name {
     text-align: center;
     padding: 0 10px;
     h4 {
       margin-bottom: 10px;
     }
-    p {
-      display: flex;
-      align-items: center;
-      text-align: left;
-      color: @gray-dark;
-      padding: 2px 0;
+    .info-ul {
+      li {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: @gray-dark;
+        padding: 4px 0;
       i {
         margin-right: 10px;
       }
       a {
         color: inherit;
+        &:hover {
+          text-decoration: underline;
+        }
       }
+    }
+
     }
     .btn-resume {
       padding-top: 20px;
@@ -150,6 +169,7 @@ export default {
         padding: 8px 15px;
         border-radius: @radius-px;
         overflow: hidden;
+        margin: 0 10px;
         &:hover {
           opacity: .9;
         }
@@ -157,11 +177,31 @@ export default {
     }
   }
   .avator {
-    width: 200px;
-    height: 200px;
+    position: relative;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
+    img {
+      position: relative;
+      z-index: 2;
+    }
+    &::after {
+      content: '暂无头像☹';
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      img {
+        display: none;
+      }
+    }
   }
 }
 #myChart {

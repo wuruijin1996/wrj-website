@@ -9,13 +9,12 @@
           </a>
           <div class="info">
             <a class="name" :href="item.url" target="_blank" title="新页面打开">{{item.name}}</a>
-            <p>{{item.desc}}</p>
+            <p :title="item.desc">{{item.desc}}</p>
           </div>
         </div>
       </li>
     </ul>
   </div>
-
 </template>
 
 <script>
@@ -28,22 +27,34 @@ export default {
     return {
       worksList: [
         {
+          name: 'Kin custom (在做的项目)',
+          desc: '为艺术家们提供设计和印刷自己设计的产品，并开设自己的店铺',
+          imgUrl: 'http://www.wuruijin.cn/works-img/kincustom.jpg',
+          url: 'https://www.kincustom.com/',
+        },
+        {
           name: 'WU-UI',
-          desc: '简易消息提示UI，原生JS，各框架都可以接入使用',
+          desc: '简易消息提示UI，原生JS，大多数框架都可以接入使用',
           imgUrl: 'http://www.wuruijin.cn/works-img/wuui.png',
           url: 'http://www.wuruijin.cn/wuui/',
         },
         {
-          name: '手机诊断室',
-          desc: '一个可以测试你手机值多钱的小工具(准不准我不知道~)',
-          imgUrl: 'http://www.wuruijin.cn/works-img/phone.png',
-          url: 'http://www.wuruijin.cn/works/phone-test/',
+          name: 'Select美化插件',
+          desc: '就是一个美化 select 原生组件的小插件',
+          imgUrl: 'http://www.wuruijin.cn/works-img/select.jpg',
+          url: 'https://www.jq22.com/jquery-info17583',
         },
         {
-          name: '蜕炒官网',
+          name: '蜕潮官网',
           desc: '一个过气的高端美发类官网',
           imgUrl: 'http://www.wuruijin.cn/works-img/turn.png',
           url: 'http://www.wuruijin.cn/works/turn/',
+        },
+        {
+          name: '手机诊断室 （移动端）',
+          desc: '一个可以测试你手机值多钱的小工具(准不准我不知道~)',
+          imgUrl: 'http://www.wuruijin.cn/works-img/phone.png',
+          url: 'http://www.wuruijin.cn/works/phone-test/',
         },
         {
           name: '滚动抽奖',
@@ -52,13 +63,13 @@ export default {
           url: 'http://www.wuruijin.cn/works/luckyDraw/',
         },
         {
-          name: '幸运大转盘',
+          name: '幸运大转盘 （移动端）',
           desc: '一个大转盘抽奖工具',
           imgUrl: 'http://www.wuruijin.cn/works-img/turntable.png',
           url: 'http://www.wuruijin.cn/works/turntable/',
         },
         {
-          name: '仿探探效果',
+          name: '仿探探效果 （移动端）',
           desc: '一个仿探探左右滑动动画效果',
           imgUrl: 'http://www.wuruijin.cn/works-img/tantan.png',
           url: 'http://www.wuruijin.cn/works/viewSwiper/',
@@ -66,9 +77,7 @@ export default {
       ],
     };
   },
-  methods: {
-
-  },
+  methods: {},
 };
 </script>
 
@@ -85,7 +94,7 @@ export default {
         background-color: #fff;
         border-radius: @radius-px;
         overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
       }
       .info {
         padding: 10px;
@@ -95,6 +104,9 @@ export default {
         }
         p {
           padding-top: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
       a {
@@ -112,7 +124,7 @@ export default {
       overflow: hidden;
       &:hover {
         img {
-          filter: brightness(.6);
+          filter: brightness(0.6);
           transform: scale(1.05);
         }
       }
@@ -136,10 +148,9 @@ export default {
   }
 }
 
-@media screen and (max-width: 640px)  {
+@media screen and (max-width: 640px) {
   .works-wrap .works-list .works-item {
     width: 100%;
   }
 }
-
 </style>
