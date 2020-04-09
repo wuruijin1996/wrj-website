@@ -32,7 +32,7 @@
             </li>
           </ul>
           <div class="btn-resume">
-            <a href="http://www.wuruijin.cn/works/resume/" target="_blank">查看详细简历</a>
+            <!-- <a href="http://www.wuruijin.cn/works/resume/" target="_blank">查看详细简历</a> -->
             <a href="http://www.wuruijin.cn/works/pdf" target="_blank">PDF简历</a>
           </div>
         </div>

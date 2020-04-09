@@ -27,7 +27,7 @@ export default {
     return {
       worksList: [
         {
-          name: 'Kin custom (在做的项目)',
+          name: 'Kin custom (国内访问比较慢)',
           desc: '为艺术家们提供设计和印刷自己设计的产品，并开设自己的店铺',
           imgUrl: 'http://www.wuruijin.cn/works-img/kincustom.jpg',
           url: 'https://www.kincustom.com/',
